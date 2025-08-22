@@ -1,0 +1,15 @@
+{
+  "brandName": "Khushi Shop",
+  "primaryColor": "#000000",
+  "accentColor": "#D4AF37",
+  "textOnPrimary": "#FFFFFF",
+  "hero": {
+    "headline": "Gold & Black Collection",
+    "subheadline": "Shop the look."
+  },
+  "contact": {
+    "phone": "+91-00000-00000",
+    "whatsapp": "+91-00000-00000",
+    "instagram": "#"
+  }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "prod-001",
+    "title": "Golden Kurti",
+    "price": 1299,
+    "currency": "INR",
+    "category": "Women",
+    "in_stock": true,
+    "images": [
+      "/uploads/demo-golden-kurti.jpg"
+    ],
+    "description": "Elegant golden kurti."
+  },
+  {
+    "id": "prod-002",
+    "title": "Black Tee",
+    "price": 599,
+    "currency": "INR",
+    "category": "Men",
+    "in_stock": true,
+    "images": [
+      "/uploads/demo-black-tee.jpg"
+    ],
+    "description": "Comfortable black tee."
+  }
+]

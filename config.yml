@@ -1,0 +1,57 @@
+
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "uploads"
+public_folder: "/uploads"
+
+publish_mode: editorial_workflow
+site_url: "/"
+logo_url: "/assets/logo.svg"
+
+collections:
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - file: "data/settings.json"
+        label: "Theme & Contact"
+        name: "settings"
+        fields:
+          - { label: "Brand Name", name: "brandName", widget: "string" }
+          - { label: "Primary Color", name: "primaryColor", widget: "string" }
+          - { label: "Accent", name: "accentColor", widget: "string" }
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Subheadline", name: "subheadline", widget: "string" }
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Phone", name: "phone", widget: "string" }
+              - { label: "WhatsApp", name: "whatsapp", widget: "string" }
+  - name: "products"
+    label: "Products"
+    files:
+      - file: "data/products.json"
+        label: "All Products"
+        name: "products"
+        fields:
+          - label: "Products"
+            name: ""
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Price", name: "price", widget: "number" }
+              - { label: "Currency", name: "currency", widget: "string" }
+              - { label: "Category", name: "category", widget: "string" }
+              - { label: "In Stock", name: "in_stock", widget: "boolean" }
+              - label: "Images"
+                name: "images"
+                widget: "list"
+                field: { label: "Image", name: "image", widget: "image" }
+              - { label: "Description", name: "description", widget: "text" }
